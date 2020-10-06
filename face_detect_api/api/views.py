@@ -10,7 +10,9 @@ from scripts.test import face_detector
 
 from django.forms.models import model_to_dict
 
-add = '/home/amir/venvs/new ones/FD_api/face_detect_api/'
+## add stands for the address of the parent Django folder of the project
+add = '/home/amir/venvs/new ones/FD_api/FD_api/face_detect_api/'
+
 class MyFileView(APIView):
     parser_classes = (MultiPartParser,)
     def post(self, request, format = None):
